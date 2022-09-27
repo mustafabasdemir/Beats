@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    margin-left: 30px;
+    margin-top: 0px;
+}
+
+section {
+    margin-top: 35px;
+    position: relative;
+    width: 98%;
+    height: 570px;
+    display: flex;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 200px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+
+header ul li a {
+    color: #fff;
+    margin-left: 40px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 700px;
+    margin-left: 50px;
+    top: 10px;
+}
+
+.content .textBox h2 {
+    color: #fff;
+    font-size: 3.2em;
+    line-height: 1em;
+    font-weight: 500;
+
+}
+
+.content .textBox button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 50px;
+    width: 300px;
+    height: 40px;
+    background: #0071E3;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: bold;
+    border-color: white;
+}
+
+
+
+/*  acılır kutu  */
+
+.acilirKutu {
+    display: none;
+    position: fixed;
+    top: 9%;
+    left: 5%;
+    width: 28%;
+    height: 82%;
+    border-radius: 30px;
+    background: white;
+    z-index: 999;
+    color: black;
+    padding: 8px;
+    border: 12px double;
+    border-color: #949596;
+}
+
+.acilirKutu img {
+    margin-bottom: -5px;
+    margin-top: -50px;
+    margin-left: 50px;
+    width: 240px;
+    height: 200px;
+}
+
+
+.acilirKutu h3 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    color: #3284D6;
+}
+
+.acilirKutu p {
+    margin-top: -5px;
+    padding-left: 30px;
+    font-size: 100%;
+    color: black;
+}
+
+
+.acilirKutu>span {
+    cursor: pointer;
+    font-size: 30px;
+    color: #949596;
+    position: absolute;
+    top: -2%;
+    right: 4%;
+    padding: 6px 0px 0px 9px;
+    width: 30px;
+    height: 30px;
+
+}
+
+.acilirKutu text {
+    color: #0071E3;
+    font-size: 12px;
+}
+
+.acilirKutu button {
+    margin-left: 8%;
+    font-size: 12px;
+}
+
+
+.content .textBox button:hover {
+    background: #fff;
+    color: #0071E3;
+    border-color: #0071E3;
+}
+
+.content .imgBox {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 280px;
+}
+
+.content .imgBox img {
+    max-width: 600px;
+    margin-top: -80px;
+    transition-duration: 1s;
+}
+
+
+.content .imgBox img:hover {
+    transform: translateY(-12px);
+    transition-duration: 1s;
+}
+
+
+.bottom_menu ul {
+    position: relative;
+    display: flex;
+    margin-top: 480px;
+    margin-left: -470px;
+}
+
+
+.bottom_menu ul li {
+    list-style: none;
+}
+
+.bottom_menu ul li a {
+    color: #fff;
+    margin-left: 40px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.right {
+    height: 300px;
+    width: 500px;
+    color: #fff;
+    z-index: 100;
+    margin-top: 180px;
+    margin-left: -200px;
+    margin-right: 120px;
+    font-size: 1.1em;
+}
+
+.right .cargo span {
+    font-weight: bolder;
+}
+
+.right .cargo p {
+    margin-left: 100px;
+    margin-top: -50px;
+}
+
+.thumb {
+    top: 85%;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    display: flex;
+
+}
+
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+
+}
+
+.thumb li img {
+    max-width: 40px;
+
+}
+
+.icons {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons li {
+    list-style: none;
+    filter: invert(1);
+}
+
+.icons li:hover {
+    filter: invert(0);
+}
+
+.icons li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50px;
+    border-bottom: 13px #949596 solid;
+    border-top: 13px #949596 solid;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #A4A5A7;
+    clip-path: polygon(100%);
+}

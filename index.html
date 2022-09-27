@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>BEATS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/692b2196ce.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">İpad</a></li>
+                <li><a href="#">İphone</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">AirPods</a></li>
+                <li><a href="#">Destek</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Beats Studio3 Wireless Kulak Çevresi Kulaklık<br><span id="textChange">Kırmızı</span></h2>
+                <button>Çantaya Ekleyin <i class="fa fa-shopping-bag" aria-hidden="true"></i></button>
+                <!-- acılır  ekran-->
+                <div class="acilirKutu" id="acilirKutu">
+                    <span id="kapat">✖</span>
+                    <h3>Beats Studio3 Wireless Kulak Çevresi Kulaklık</h3>
+                    <img src="img/shop_bigImg/red.png" class="acilirKutuImg" />
+                    <p>7.499,00 TL<br><text>2.499,67 TL x 3 aya kadar taksit</text></p>
+
+                    <p>
+                        Hala karar veremediniz mi?
+                        <br>Bu ürünü bir listeye ekleyin ve daha sonra kolayca yeniden bulun.
+                        <i class="fa fa-bookmark-o" aria-hidden="true" style="margin-left: 5% ; color:blue"></i>
+                    </p>
+
+                    <p>
+                        <b>Satın almak için yardım alın.</b><br>
+                        sohbet edin veya <b>0216 282 1511</b> numaralı telefonu arayın.
+                    </p>
+
+                    <button>Satın Alma İşlemini Tamamla <i class="fa fa-credit-card-alt"
+                            aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="bottom_menu">
+                <ul>
+                    <li><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> Daha Fazla Bilgi al</a></li>
+                    <li><a href="#"><i class="fa fa-headphones" aria-hidden="true"></i> Teknik Özellikler</a></li>
+                </ul>
+            </div>
+            <div class="imgBox">
+                <img src="img/large/img1.png" class="beats">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/color/thumb1.png"
+                    onclick="textDegis(),imgSlider('img/large/img1.png','img/shop_bigImg/red.png'),changeCircleColor('#A4A5A7','#949596')">
+            </li>
+            <li><img src="img/color/thumb2.png"
+                    onclick="textDegis(),imgSlider('img/large/img2.png','img/shop_bigImg/grey.png'),changeCircleColor('#C8B096','#b49e87')">
+            </li>
+            <li><img src="img/color/thumb3.png"
+                    onclick="textDegis(),imgSlider('img/large/img3.png','img/shop_bigImg/blue.png'),changeCircleColor('#95999C','#868a8c')">
+            </li>
+            <li><img src="img/color/thumb4.png"
+                    onclick="textDegis(),imgSlider('img/large/img4.png','img/shop_bigImg/matteBlack.png'),changeCircleColor('#C5AA6D','#b19962')">
+            </li>
+            <li><img src="img/color/thumb5.png"
+                    onclick="textDegis(),imgSlider('img/large/img5.png','img/shop_bigImg/redBlack.png'),changeCircleColor('#BC2C35','#a92830')">
+            </li>
+            <li><img src="img/color/thumb6.png"
+                    onclick="textDegis(),imgSlider('img/large/img6.png','img/shop_bigImg/black.png'),changeCircleColor('#67686A','#5d5e5f')">
+            </li>
+        </ul>
+        <div class="right">
+            <p>
+                Beats Studio3 Wireless kulaklık 🎧, Kusursuz Uyarlamalı Gürültü Önleme (Pure ANC)) özelliği
+                sayesinde birinci
+                sınıf bir müzik dinleme deneyimi sunuyor.
+            </p>
+            <div class="car">
+                <img src="img/car.png">
+            </div>
+            <div class="cargo">
+                <p>Gönderim: <br>Stokta var<br>Ücretsiz Gönderim<br><span>Teslimat tarihlerini öğrenin</span></p>
+            </div>
+        </div>
+        <ul class="icons">
+            <li><a href="#"><img src="img/social/facebook.png"></a></li>
+            <li><a href="#"><img src="img/social/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/mustafa_basdemirr/"><img src="img/social/instagram.png"></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/mustafa-basdemir/"><img src="img/social/linkedin.png"></a>
+            </li>
+            <li><a href="https://github.com/mustafabasdemir"><img src="img/social/github.png"></a></li>
+        </ul>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+        function imgSlider(img, img2) {
+            document.querySelector('.beats').src = img;  // ana ekran kulaklık değişimi 
+            document.querySelector('.acilirKutuImg').src = img2;  //acılır kutu kulaklık resim değişimi
+
+        }
+
+        function changeCircleColor(color, color2) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;  //section arkaplan değişim 
+            circle.style.borderColor = color2;  // section border değişim 
+            document.getElementById("acilirKutu").style.borderColor = color2;  //acilir kutu border color değisim
+            document.getElementById("kapat").style.color = color2;  // acılır kutu kapat simge rengi 
+        }
+
+        //renk seçiminde değişden renk yazısı -h3
+        var not_index = 0;
+        var notes = [
+            "Kırmızı",
+            "Gölge Grisi",
+            "Mavi",
+            "Mat Siyah",
+            "Kırmızı Efsanesi",
+            "Gece Siyahı"
+        ];
+        function textDegis() {
+            ++not_index;
+            if (not_index >= notes.length) {
+                not_index = 0;
+            }
+            document.getElementById("textChange").innerHTML = notes[not_index];
+        }
+
+
+        // acılır kutu
+        $(document).ready(function () {
+            $("button").click(function () {
+                $(".acilirKutu").fadeIn(300);
+                positionPopup();
+            });
+
+            $(".acilirKutu > span").click(function () {
+                $(".acilirKutu").fadeOut(300);
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
