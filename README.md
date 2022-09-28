@@ -3,5 +3,5 @@
  - HTML - CSS VE JAVASCRİPT KULLANILMIŞTIR.
 
 
-https://user-images.githubusercontent.com/78982677/192534127-8b36e5b5-1867-4bcf-b823-b9ccafdc1a3a.mp4
+https://user-images.githubusercontent.com/78982677/192871072-f0f5cbda-8447-463e-900c-8654694590c0.mp4
 
